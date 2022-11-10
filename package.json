@@ -1,12 +1,16 @@
 {
-  "name": "pulse",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Html/Css course project",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quiddlee/Portfolio.git"
+  },
+  "author": "Bogdan Scherbina",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.10",
