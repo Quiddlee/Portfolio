@@ -15,13 +15,18 @@
 .container {
     width: 1140px;
     margin: 0 auto;
+    &_about-me {
+        padding: 0 100px 0 468px
+    }
 }
 
 
 //blocks
-@import "blocks/promo";
 @import "blocks/title";
 @import "blocks/button";
 @import "blocks/sidepanel";
+@import "blocks/divider";
+@import "blocks/promo";
+@import "blocks/about-me";
 
 //media
