@@ -7,15 +7,14 @@ const closeAside = document.querySelector('.menu__overlay');
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
-    hamburger.classList.add('hamburger_active');
+    hamburger.classList.add('active');
 });
 
-closeElement.addEventListener('click', () => {
-    menu.classList.remove('active');
-    hamburger.classList.remove('hamburger_active');
-});
-
-closeAside.addEventListener('click', () => {
-    menu.classList.remove('active');
-    hamburger.classList.remove('hamburger_active');
-});
+function closeElem (event, arg) {
+    event.addEventListener('click', () => {
+        arg.classList.remove('active');
+    });
+}
+closeElem(menu, menu);
+closeElem(closeAside, menu);
+closeElem(menu, hamburger);

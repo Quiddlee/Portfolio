@@ -23,7 +23,7 @@
     span.long {
         width: 36px;
     }
-    &_active {
+    &.active {
         transform: rotate(90deg) scale(1, 1.3);
         span {
             background-color: $main-color;
