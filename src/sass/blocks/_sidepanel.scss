@@ -23,5 +23,11 @@
         display: flex;
         width: 20px;
         height: 20px;
+        &:hover {
+            svg path {
+                transition: 0.1s all;
+                fill: $main-color;
+            }
+        }
     }
 }
