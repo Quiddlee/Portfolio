@@ -2,4 +2,8 @@
     width: 60px;
     height: 4px;
     background-color: $main-color;
+    margin: 25px auto;
+    &_about-me {
+        margin: 0;
+    }
 }
