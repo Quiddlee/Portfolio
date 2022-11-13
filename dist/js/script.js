@@ -10,11 +10,11 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.add('active');
 });
 
-function closeElem (event, arg) {
+function hamburgerClose (event, arg) {
     event.addEventListener('click', () => {
         arg.classList.remove('active');
     });
 }
-closeElem(menu, menu);
-closeElem(closeAside, menu);
-closeElem(menu, hamburger);
+hamburgerClose(closeElement, menu);
+hamburgerClose(closeAside, menu);
+hamburgerClose(menu, hamburger);
