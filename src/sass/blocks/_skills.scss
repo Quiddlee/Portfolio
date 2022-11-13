@@ -1,0 +1,83 @@
+.skills {
+    padding: 125px 0 120px 0;
+    .title {
+        text-align: center;
+    }
+    &__title {
+        position: relative;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-auto-columns: 270px;
+        gap: 13px;
+        justify-content: center;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        border: solid 1px;
+        min-height: 270px;
+        width: 270px;
+        height: 270px;
+        &__block {
+            display: block;
+            margin: auto auto;
+            max-width: 197px;
+            &-title {
+                margin-top: 20px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 21px;
+            }
+            &-descr {
+                margin-top: 15px;
+                font-size: 12px;
+                line-height: 18px;
+                color: #000000;
+            }
+        }
+    }
+    &__percentage {
+        padding-top: 120px;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            gap: 45px;
+        }
+        &__item {
+            &-upper {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+            }
+            &-title {
+                @include before_circle;
+                z-index: 2;
+                padding-left: 12.5px;
+                &::before {
+                    top: -8px;
+                }
+            }
+            &-filling {
+                margin-top: 27px;
+                width: 350px;
+                height: 14px;
+                background: #E8E4DE;
+                border-radius: 4px;
+                &-child {
+                    height: 100%;
+                    background: #FFA501;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
