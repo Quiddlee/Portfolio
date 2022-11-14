@@ -28,4 +28,26 @@
             color: #000;
         }
     }
+    .link {
+        &::before {
+            content: '';
+            position: absolute;
+            width: 73px;
+            height: 2px;
+            left: 366px;
+            top: 417px;
+            transform: scaleX(0);
+            background-color: $main-color_active;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        &:hover {
+            color: $main-color_active;
+            transition: 0.25s all;
+        }
+        &:hover::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
 }
