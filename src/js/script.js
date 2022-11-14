@@ -18,3 +18,12 @@ function hamburgerClose (event, arg) {
 hamburgerClose(closeElement, menu);
 hamburgerClose(closeAside, menu);
 hamburgerClose(menu, hamburger);
+
+//percentage
+
+const counters = document.querySelectorAll('.skills__percentage__item-percent');
+const lines = document.querySelectorAll('.skills__percentage__item-filling-child');
+
+counters.forEach((element, index) => {
+    lines[index].style.width = element.innerHTML;
+});

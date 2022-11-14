@@ -44,6 +44,7 @@
         &:hover {
             color: $main-color_active;
             transition: 0.25s all;
+            box-shadow: 10px 0 50px rgba($main-color_active, 0.2);
         }
         &:hover::before {
             transform: scaleX(1);

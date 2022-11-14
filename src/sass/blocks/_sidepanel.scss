@@ -27,6 +27,7 @@
             svg path {
                 transition: 0.1s all;
                 fill: $main-color;
+                transform: scale(1.05, 1.05);
             }
         }
     }
