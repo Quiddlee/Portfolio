@@ -4,6 +4,9 @@
     min-height: 600px;
     &__aside-img {
         position: absolute;
+        width: 400px;
+        height: 600px;
+        object-fit: cover;
     }
     &__subtitle {
         position: relative;
