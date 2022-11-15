@@ -39,9 +39,15 @@
     &__link {
         margin-right: 25px;
         text-decoration: none;
-        img {
+        svg {
             max-width: 30px;
             max-height: 30px;
+        }
+        &:hover {
+            svg path {
+                transition: 0.1s all;
+                fill: $main-color;
+            }
         }
     }
     &__form {
@@ -73,9 +79,15 @@
         align-items: center;
         input {
             margin-right: 10px;
+            cursor: pointer;
+            &:hover {
+                transition: 1s all;
+                transform: scale(1.05, 1.05);
+            }
         }
     }
     &__input {
+        transition: 0.3s all;
         position: relative;
         input {
             width: 100%;
