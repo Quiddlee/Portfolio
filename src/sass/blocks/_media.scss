@@ -124,6 +124,14 @@
             }
         } 
     }
+    .price-list {
+        &__wrapper {
+            padding: 0;
+            column-gap: 0;
+            row-gap: 20px;
+            justify-content: space-around;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -197,6 +205,16 @@
         }
         &__wrapper {
             margin-top: 40px;
+        }
+    }
+    .price-list {
+        padding-top: 40px;
+        .divider {
+            margin-bottom: 0px;
+        }
+        &__wrapper {
+            margin-top: 20px;
+            grid-template-columns: 320px;
         }
     }
 }
@@ -302,6 +320,12 @@
                     width: 300px;
                 }
             }
+        }
+    }
+    .price-list {
+        &__wrapper {
+            grid-template-columns: 265px;
+            margin-left: 15px;
         }
     }
 }
