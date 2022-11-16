@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -91,7 +91,11 @@
 
     <section class="about-me" id="about-me">
         <div class="container">
-            <img src="img/about me/me.jpg" alt="my_photo" class="about-me__aside-img">
+            <img srcset="img/about-me/me_mobile.jpg 300w,
+                        img/about-me/me.jpg 400w"
+                sizes="(max-with: 576px) 280px,
+                        (min-width: 577px) 400px" 
+            src="img/about-me/me.jpg" alt="my_photo" class="about-me__aside-img">
         </div>
         
         <div class="container container_about-me">
@@ -354,7 +358,7 @@
             </div>
         </div>
     </section>
-<!-- 
+
     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Портфолио</h2>
@@ -382,7 +386,7 @@
             </div>
         </div>
     </section>
-
+<!--  
     <section class="price-list" id="price-list">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
